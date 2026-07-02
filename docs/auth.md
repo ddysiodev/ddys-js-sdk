@@ -32,5 +32,4 @@ Safe places:
 - CMS plugin backend
 - Bot service
 
-Avoid putting a site owner's API key in public browser JavaScript.
-
+For authenticated operations, configure the API key in a server-side service, Worker, CMS backend, or bot process.

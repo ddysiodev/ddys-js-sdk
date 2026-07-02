@@ -80,7 +80,7 @@ const request = await ddys.requests.create({
 console.log(request.url);
 ```
 
-Do not bundle a site owner's API key into public browser JavaScript.
+Public display features do not require an API key. For write endpoints, configure the key on your server or Worker.
 
 ## Custom API Base URL
 

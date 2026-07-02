@@ -76,7 +76,7 @@ const request = await ddys.requests.create({
 console.log(request.url);
 ```
 
-不要把站长自己的 API Key 打包进公开浏览器 JavaScript。公开展示类功能不需要 API Key。
+公开展示类功能无需 API Key；如需调用写接口，建议在服务端或 Worker 中配置用户 API Key。
 
 ## 自定义 API 地址
 

@@ -2,7 +2,7 @@
 
 Official JavaScript SDK for the DDYS Open API.
 
-Official website: https://ddys.io
+Official website: [低端影视](https://ddys.io/)
 
 This package is designed as the base layer for DDYS widgets, CMS plugins, static-site starters, bots, MCP servers, and custom integrations.
 

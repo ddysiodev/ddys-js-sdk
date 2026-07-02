@@ -1,6 +1,6 @@
 const DEFAULT_BASE_URL = 'https://ddys.io/api/v1';
 const DEFAULT_TIMEOUT_MS = 15000;
-const DEFAULT_USER_AGENT = '@ddys/js-sdk/0.1.0';
+const DEFAULT_USER_AGENT = '@ddysiodev/js-sdk/0.1.0';
 
 class DdysApiError extends Error {
   constructor(message, options = {}) {

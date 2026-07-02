@@ -28,7 +28,6 @@ test('package.json has safe publish boundaries', async () => {
   const pkg = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'));
   assert.equal(pkg.type, 'module');
   assert.equal(pkg.exports['.'].types, './dist/index.d.ts');
-  assert.deepEqual(pkg.files, ['dist', 'README.md', 'LICENSE']);
+  assert.deepEqual(pkg.files, ['dist', 'README.md', 'README.zh-CN.md', 'LICENSE']);
   assert.equal(pkg.publishConfig.access, 'public');
 });
-

@@ -1,4 +1,4 @@
-import { createDdysClient } from '@ddys/js-sdk';
+import { createDdysClient } from '@ddysiodev/js-sdk';
 
 export async function GET() {
   const ddys = createDdysClient({
@@ -12,4 +12,3 @@ export async function GET() {
     data: latest
   });
 }
-

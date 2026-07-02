@@ -18,7 +18,7 @@ npm pack --dry-run
 The package is public:
 
 ```bash
-npm publish --access public --provenance
+npm publish --access public
 ```
 
 Recommended long-term publishing method:
@@ -34,4 +34,3 @@ This package follows Semantic Versioning:
 - patch: bug fixes
 - minor: backward-compatible features
 - major: breaking changes
-

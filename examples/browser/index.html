@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DDYS SDK Browser Example</title>
+  </head>
+  <body>
+    <main>
+      <h1>DDYS Latest</h1>
+      <ul id="movies"></ul>
+    </main>
+
+    <script type="module">
+      import { createDdysClient } from '../../dist/index.js';
+
+      const ddys = createDdysClient();
+      const movies = await ddys.latest({ limit: 8 });
+      const list = document.querySelector('#movies');
+
+      for (const movie of movies) {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `https://ddys.io${movie.url}`;
+        link.textContent = `${movie.title} (${movie.year})`;
+        item.append(link);
+        list.append(item);
+      }
+    </script>
+  </body>
+</html>
+

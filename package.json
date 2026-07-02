@@ -1,0 +1,52 @@
+{
+  "name": "@ddys/js-sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript SDK for the DDYS Open API.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node --test test/*.test.mjs",
+    "prepack": "node scripts/build.mjs && node --test test/*.test.mjs",
+    "smoke:live": "node test/live-smoke.mjs"
+  },
+  "keywords": [
+    "ddys",
+    "movie",
+    "sdk",
+    "api",
+    "typescript",
+    "fetch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddysiodev/ddys-js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ddysiodev/ddys-js-sdk/issues"
+  },
+  "homepage": "https://github.com/ddysiodev/ddys-js-sdk#readme",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

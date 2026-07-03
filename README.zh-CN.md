@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-DDYS Open API 官方 JavaScript SDK。
+低端影视 API 官方 JavaScript SDK。
 
 官网：[低端影视](https://ddys.io/)
 

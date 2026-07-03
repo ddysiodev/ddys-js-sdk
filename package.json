@@ -1,7 +1,7 @@
 {
   "name": "@ddysiodev/js-sdk",
   "version": "0.1.2",
-  "description": "Official JavaScript SDK for the DDYS Open API.",
+  "description": "低端影视 API 的官方 JavaScript SDK。",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",

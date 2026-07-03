@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-Official JavaScript SDK for the DDYS Open API.
+Official JavaScript SDK for the DDYS API.
 
 Official website: [DDYS](https://ddys.io/)
 
